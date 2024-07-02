@@ -6,9 +6,7 @@ import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Component;
 
-/**
- * @author Amil Srinath
- */
+
 @Component
 @RequiredArgsConstructor
 public class Converte {
