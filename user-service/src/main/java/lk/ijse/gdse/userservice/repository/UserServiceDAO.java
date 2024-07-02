@@ -7,5 +7,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @author Amil Srinath
  */
 public interface UserServiceDAO extends JpaRepository<User, String> {
-
+    boolean existsByEmailAndPassword(String email, String password);
 }

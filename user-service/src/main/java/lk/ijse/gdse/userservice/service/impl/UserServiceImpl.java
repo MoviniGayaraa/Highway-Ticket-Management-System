@@ -24,4 +24,14 @@ public class UserServiceImpl implements UserService {
     public void save(UserDTO userDTO) {
         userServiceDAO.save(converte.convertToEntity(userDTO));
     }
+
+    @Override
+    public boolean isExistsUser(String userId) {
+        return userServiceDAO.existsById(userId);
+    }
+
+    @Override
+    public boolean checkCredentials(UserDTO userDTO) {
+        return userServiceDAO.existsByEmailAndPassword(userDTO.getEmail(), userDTO.getPassword());
+    }
 }
