@@ -14,11 +14,11 @@ import java.util.Date;
 @Entity
 @Table(name = "ticket")
 public class Ticket {
-//    @Id
-//    private String ticketId;
-//    private String vehicleId;
-//    private String userId;
-//    private Date issueDate;
-//    @Enumerated(EnumType.STRING)
-//    private TicketStatus status;
+    @Id
+    private String ticketId;
+    private String vehicleId;
+    private String userId;
+    private Date issueDate;
+    @Enumerated(EnumType.STRING)
+    private TicketStatus status;
 }
