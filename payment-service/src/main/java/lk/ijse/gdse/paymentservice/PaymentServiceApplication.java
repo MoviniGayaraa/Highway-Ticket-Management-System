@@ -26,6 +26,6 @@ public class PaymentServiceApplication {
 	@LoadBalanced
 	public RestTemplate restTemplate() {
 		return new RestTemplate();
-
+	}
 
 }
