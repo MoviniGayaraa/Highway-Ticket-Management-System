@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 public class VehicleDTO {
-//    private String vehicleId;
-//    private String brand;
-//    private String model;
-//    private String color;
-//    private String userId;
+    private String vehicleId;
+    private String brand;
+    private String model;
+    private String color;
+    private String userId;
 }
