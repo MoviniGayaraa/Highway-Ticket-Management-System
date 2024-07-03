@@ -47,12 +47,12 @@ public class TicketController {
         return ResponseEntity.ok(ticketService.getAll());
     }
 
-//    @GetMapping("/existTicket/{ticketId}")
-//    public ResponseEntity<?> existTicket(@PathVariable String ticketId) {
-//        if (ticketService.isExistsTicket(ticketId)){
-//            return ResponseEntity.ok("Ticket exists");
-//        }else {
-//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Ticket does not exist");
-//        }
-//    }
+    @GetMapping("/existTicket/{ticketId}")
+    public ResponseEntity<?> existTicket(@PathVariable String ticketId) {
+        if (ticketService.isExistsTicket(ticketId)){
+            return ResponseEntity.ok("Ticket exists");
+        }else {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Ticket does not exist");
+        }
+    }
 }
