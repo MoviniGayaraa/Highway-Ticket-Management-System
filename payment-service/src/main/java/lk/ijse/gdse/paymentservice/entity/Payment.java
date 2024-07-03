@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
-/**
- * @author Amil Srinath
- */
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Data

@@ -6,16 +6,14 @@ import lk.ijse.gdse.paymentservice.repository.PaymentServiceDAO;
 import lk.ijse.gdse.paymentservice.service.PaymentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.HttpMethod;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author Amil Srinath
- */
+
 @Service
 @RequiredArgsConstructor
 public class PaymentSerivceImpl implements PaymentService {
