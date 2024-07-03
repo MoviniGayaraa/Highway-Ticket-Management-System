@@ -1,6 +1,5 @@
 package lk.ijse.gdse.vehicleservice.service.impl;
 
-import jakarta.transaction.Transactional;
 import lk.ijse.gdse.vehicleservice.convertion.Converte;
 import lk.ijse.gdse.vehicleservice.dto.VehicleDTO;
 import lk.ijse.gdse.vehicleservice.repository.VehicleServiceDAO;
@@ -15,9 +14,7 @@ import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
-/**
- * @author Amil Srinath
- */
+
 @Service
 @RequiredArgsConstructor
 public class VehicleServiceImpl implements VehicleService {

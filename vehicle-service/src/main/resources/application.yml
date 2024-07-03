@@ -1,1 +1,5 @@
-spring.application.name=vehicle-service
+spring:
+  application:
+    name: vehicle-service
+  config:
+    import: "optional:configserver:http://localhost:8089"

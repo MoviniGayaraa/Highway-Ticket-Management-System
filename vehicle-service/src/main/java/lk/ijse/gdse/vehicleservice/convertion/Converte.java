@@ -8,9 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 
-/**
- * @author Amil Srinath
- */
+
 @Component
 @RequiredArgsConstructor
 public class Converte {
