@@ -48,14 +48,14 @@ public class PaymentSerivceImpl implements PaymentService {
         }
     }
 
-//    @Override
-//    public boolean isExistsTicket(String ticketId) {
-//        String url = "http://ticket-service/api/v1/ticket/existTicket/" + ticketId;
-//        try {
-//            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
-//            return response.getStatusCode() == HttpStatus.OK;
-//        } catch (HttpClientErrorException e) {
-//            return false;
-//        }
-//    }
+    @Override
+    public boolean isExistsTicket(String ticketId) {
+        String url = "http://ticket-service/api/v1/ticket/existTicket/" + ticketId;
+        try {
+            ResponseEntity<String> response = restTemplate.getForEntity(url, String.class);
+            return response.getStatusCode() == HttpStatus.OK;
+        } catch (HttpClientErrorException e) {
+            return false;
+        }
+    }
 }
