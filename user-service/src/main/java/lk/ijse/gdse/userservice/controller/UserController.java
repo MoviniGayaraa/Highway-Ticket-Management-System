@@ -41,12 +41,12 @@ public class UserController {
         return ResponseEntity.ok("User updated successfully");
     }
 
-    @GetMapping("/existUser/{userId}")
-    public ResponseEntity<?> existUser(@PathVariable String userId) {
-        if (userService.isExistsUser(userId)){
-            return ResponseEntity.ok("User exists");
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User does not exist");
-        }
-    }
+//    @GetMapping("/existUser/{userId}")
+//    public ResponseEntity<?> existUser(@PathVariable String userId) {
+//        if (userService.isExistsUser(userId)){
+//            return ResponseEntity.ok("User exists");
+//        }else {
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("User does not exist");
+//        }
+//    }
 }
