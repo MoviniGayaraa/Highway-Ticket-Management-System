@@ -21,11 +21,11 @@ public class PaymentServiceApplication {
 	public ModelMapper modelMapper() {
 		return new ModelMapper();
 	}
-
-	@Bean
-	@LoadBalanced
-	public RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
+//
+//	@Bean
+//	@LoadBalanced
+//	public RestTemplate restTemplate() {
+//		return new RestTemplate();
+//	}
 
 }
