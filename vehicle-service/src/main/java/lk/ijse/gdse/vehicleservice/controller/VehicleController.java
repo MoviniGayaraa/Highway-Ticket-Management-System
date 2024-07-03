@@ -30,11 +30,11 @@ public class VehicleController {
         }
     }
 
-//    @PutMapping(value = "/update", consumes = MediaType.APPLICATION_JSON_VALUE)
-//    public ResponseEntity<?> update(@RequestBody VehicleDTO vehicleDTO) {
-//        vehicleService.save(vehicleDTO);
-//        return ResponseEntity.ok("Vehicle updated successfully");
-//    }
+    @PutMapping(value = "/update", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<?> update(@RequestBody VehicleDTO vehicleDTO) {
+        vehicleService.save(vehicleDTO);
+        return ResponseEntity.ok("Vehicle updated successfully");
+    }
 
     @GetMapping("/getAllVehicles")
     public ResponseEntity<?> getAll() {
