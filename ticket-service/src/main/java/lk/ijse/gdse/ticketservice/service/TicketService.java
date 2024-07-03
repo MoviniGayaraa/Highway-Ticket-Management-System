@@ -4,9 +4,7 @@ import lk.ijse.gdse.ticketservice.dto.TicketDTO;
 
 import java.util.List;
 
-/**
- * @author Amil Srinath
- */
+
 public interface TicketService {
     void save(TicketDTO ticketDTO);
     void updateStatus(String ticketId);

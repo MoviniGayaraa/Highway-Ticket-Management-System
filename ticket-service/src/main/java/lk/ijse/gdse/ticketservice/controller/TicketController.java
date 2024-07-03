@@ -9,9 +9,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-/**
- * @author Amil Srinath
- */
+
 @RestController
 @RequestMapping("api/v1/ticket")
 public class TicketController {
@@ -49,12 +47,12 @@ public class TicketController {
         return ResponseEntity.ok(ticketService.getAll());
     }
 
-    @GetMapping("/existTicket/{ticketId}")
-    public ResponseEntity<?> existTicket(@PathVariable String ticketId) {
-        if (ticketService.isExistsTicket(ticketId)){
-            return ResponseEntity.ok("Ticket exists");
-        }else {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Ticket does not exist");
-        }
-    }
+//    @GetMapping("/existTicket/{ticketId}")
+//    public ResponseEntity<?> existTicket(@PathVariable String ticketId) {
+//        if (ticketService.isExistsTicket(ticketId)){
+//            return ResponseEntity.ok("Ticket exists");
+//        }else {
+//            return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Ticket does not exist");
+//        }
+//    }
 }
